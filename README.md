@@ -1,6 +1,6 @@
-# bookly_app
+# Bookly
 
-Bookly_App
+Bookly is a platform for selling or buying used books
 
 ## Info
 
