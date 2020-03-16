@@ -1,3 +1,4 @@
+![GitHub Logo](/images/Bookly.png)
 # Bookly
 
 Bookly is a platform for selling or buying used books
