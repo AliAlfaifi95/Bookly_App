@@ -9,13 +9,13 @@ class HorizontalList extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         children: <Widget>[
           Category(
-            imageLoc: 'images/cat/General Knowledge.jpg',
+            imageLoc: 'images/cat/General_Knowledge.jpg',
           ),
           Category(
             imageLoc: 'images/cat/Philosophy.jpg',
           ),
           Category(
-            imageLoc: 'images/cat/Social Scinces.jpg',
+            imageLoc: 'images/cat/Social_Scinces.jpg',
           ),
           Category(
             imageLoc: 'images/cat/Languages.jpg',
@@ -30,7 +30,7 @@ class HorizontalList extends StatelessWidget {
             imageLoc: 'images/cat/Literature.jpg',
           ),
           Category(
-            imageLoc: 'images/cat/History & Geography.jpg',
+            imageLoc: 'images/cat/History&Geography.jpg',
           ),
           Category(
             imageLoc: 'images/cat/Arts.jpg',

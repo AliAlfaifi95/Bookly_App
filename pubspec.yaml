@@ -51,14 +51,14 @@ flutter:
     - images/2.jpg
     - images/3.jpg
     - images/cat/Arts.jpg
-    - images/cat/General Knowledge.jpg
+    - images/cat/General_Knowledge.jpg
     - images/cat/Philosophy.jpg
-    - images/cat/Social Scinces.jpg
+    - images/cat/Social_Scinces.jpg
     - images/cat/Languages.jpg
     - images/cat/Science.jpg
     - images/cat/Technology.jpg
     - images/cat/Literature.jpg
-    - images/cat/History & Geography.jpg
+    - images/cat/History&Geography.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
