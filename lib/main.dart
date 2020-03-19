@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:bookly_app/components/horizontal_LV.dart';
+import 'package:bookly_app/components/books.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -119,11 +120,24 @@ class _HomePageState extends State<HomePage> {
           //padding widget
           new Padding(
             padding: const EdgeInsets.all(10.0),
-            child: new Text('Categories'),),
+            child: new Text('Categories',style: TextStyle(fontWeight: FontWeight.bold),),
+          ),
           // Horizontal listview
           HorizontalList(),
+          
+           new Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: new Text('Recent books',style: TextStyle(fontWeight: FontWeight.bold)),
+          ),
+          
+          //gridView
+          Container(
+            height: 320.0,
+            child: Books(),
+          ),
         ],
       ),
     );
   }
 }
+ 
