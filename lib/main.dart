@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
+import 'package:bookly_app/components/horizontal_LV.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -64,28 +65,28 @@ class _HomePageState extends State<HomePage> {
             ),
             //Body
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: ListTile(
                 title: Text('Home Page'),
                 leading: Icon(Icons.home),
               ),
             ),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: ListTile(
                 title: Text('My Account'),
                 leading: Icon(Icons.person),
               ),
             ),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: ListTile(
                 title: Text('My Orders'),
                 leading: Icon(Icons.shopping_basket),
               ),
             ),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: ListTile(
                 title: Text('Favorites'),
                 leading: Icon(Icons.favorite),
@@ -93,17 +94,20 @@ class _HomePageState extends State<HomePage> {
             ),
             Divider(),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: ListTile(
                 title: Text('Settings'),
-                leading: Icon(Icons.settings, color: Colors.red,),
+                leading: Icon(
+                  Icons.settings,
+                  color: Colors.red,
+                ),
               ),
             ),
             InkWell(
-              onTap: (){},
+              onTap: () {},
               child: ListTile(
                 title: Text('About us'),
-                leading: Icon(Icons.help,color: Colors.blue),
+                leading: Icon(Icons.help, color: Colors.blue),
               ),
             ),
           ],
@@ -111,8 +115,14 @@ class _HomePageState extends State<HomePage> {
       ),
       body: new ListView(
         children: <Widget>[
-          imageCarousel
-        ]
+          imageCarousel,
+          //padding widget
+          new Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: new Text('Categories'),),
+          // Horizontal listview
+          HorizontalList(),
+        ],
       ),
     );
   }
