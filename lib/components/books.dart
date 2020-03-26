@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bookly_app/Pages/book_details.dart';
 
 class Books extends StatefulWidget {
   @override
@@ -30,47 +31,53 @@ class _BooksState extends State<Books> {
       gridDelegate:
           new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
       itemBuilder: (BuildContext context, int index) {
-        return SingleProd(
-          prod_name: productList[index]['name'],
-          prod_pict: productList[index]['picture'],
-          prod_price: productList[index]['price'],
+        return SingleBook(
+          book_name: productList[index]['name'],
+          book_pict: productList[index]['picture'],
+          book_price: productList[index]['price'],
         );
       },
     );
   }
 }
 
-class SingleProd extends StatelessWidget {
-  final prod_name;
-  final prod_pict;
-  final prod_price;
+class SingleBook extends StatelessWidget {
+  final book_name;
+  final book_pict;
+  final book_price;
 
-  SingleProd({this.prod_name, this.prod_pict, this.prod_price});
+  SingleBook({this.book_name, this.book_pict, this.book_price});
   @override
   Widget build(BuildContext context) {
     return Card(
       child: Hero(
-          tag: prod_name,
+          tag: book_name,
           child: Material(
             child: InkWell(
-              onTap: () {},
+              onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                  // Passing details to the bookdetail page
+                  builder: (context) => new BookDetails(
+                        bookName: book_name,
+                        bookImage: book_pict,
+                        bookPrice: book_price,
+                      ))),
               child: GridTile(
                 footer: Container(
                   color: Colors.white70,
                   child: ListTile(
                     leading: Text(
-                      prod_name,
+                      book_name,
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     title: Text(
-                      "$prod_price",
+                      "$book_price",
                       style: TextStyle(
                           color: Colors.myOrange, fontWeight: FontWeight.w800),
                     ),
                   ),
                 ),
                 child: Image.asset(
-                  prod_pict,
+                  book_pict,
                   fit: BoxFit.fitHeight,
                 ),
               ),
