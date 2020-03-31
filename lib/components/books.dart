@@ -63,19 +63,15 @@ class SingleBook extends StatelessWidget {
                       ))),
               child: GridTile(
                 footer: Container(
-                  color: Colors.white70,
-                  child: ListTile(
-                    leading: Text(
-                      book_name,
-                      style: TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                    title: Text(
-                      "$book_price",
-                      style: TextStyle(
-                          color: Colors.myOrange, fontWeight: FontWeight.w800),
-                    ),
-                  ),
-                ),
+                    color: Colors.white,
+                    child: new Row(
+                      children: <Widget>[
+                        Expanded(
+                          child: new Text(book_name,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.0),),
+                        ),
+                        new Text("${book_price} SR",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.0,color: Colors.red),)
+                      ],
+                    )),
                 child: Image.asset(
                   book_pict,
                   fit: BoxFit.fitHeight,

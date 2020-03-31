@@ -1,4 +1,4 @@
-#Fri Mar 27 01:02:22 AST 2020
+#Tue Mar 31 19:42:07 AST 2020
 base.0=/Users/alialfaifi/Desktop/Project_/Bookly/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

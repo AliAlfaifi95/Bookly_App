@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:bookly_app/components/horizontal_LV.dart';
 import 'package:bookly_app/components/books.dart';
+import 'package:bookly_app/Pages/cart.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -32,6 +33,7 @@ class _HomePageState extends State<HomePage> {
         animationDuration: Duration(milliseconds: 1000),
         dotSize: 4.0,
         indicatorBgPadding: 0.0,
+        dotBgColor: Colors.transparent,
         dotIncreasedColor: Colors.myOrange,
       ),
     );
@@ -44,7 +46,9 @@ class _HomePageState extends State<HomePage> {
               icon: Icon(Icons.search, color: Colors.white), onPressed: () {}),
           new IconButton(
               icon: Icon(Icons.shopping_cart, color: Colors.white),
-              onPressed: () {})
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => new Cart()));
+              })
         ],
       ),
       drawer: new Drawer(
@@ -69,28 +73,28 @@ class _HomePageState extends State<HomePage> {
               onTap: () {},
               child: ListTile(
                 title: Text('Home Page'),
-                leading: Icon(Icons.home),
+                leading: Icon(Icons.home,color: Colors.myOrange),
               ),
             ),
             InkWell(
               onTap: () {},
               child: ListTile(
                 title: Text('My Account'),
-                leading: Icon(Icons.person),
+                leading: Icon(Icons.person,color: Colors.myOrange),
               ),
             ),
             InkWell(
               onTap: () {},
               child: ListTile(
                 title: Text('My Orders'),
-                leading: Icon(Icons.shopping_basket),
+                leading: Icon(Icons.shopping_basket,color: Colors.myOrange),
               ),
             ),
             InkWell(
               onTap: () {},
               child: ListTile(
                 title: Text('Favorites'),
-                leading: Icon(Icons.favorite),
+                leading: Icon(Icons.favorite,color: Colors.myOrange),
               ),
             ),
             Divider(),
@@ -108,7 +112,7 @@ class _HomePageState extends State<HomePage> {
               onTap: () {},
               child: ListTile(
                 title: Text('About us'),
-                leading: Icon(Icons.help, color: Colors.blue),
+                leading: Icon(Icons.info, color: Colors.blue),
               ),
             ),
           ],
@@ -120,16 +124,20 @@ class _HomePageState extends State<HomePage> {
           //padding widget
           new Padding(
             padding: const EdgeInsets.all(10.0),
-            child: new Text('Categories',style: TextStyle(fontWeight: FontWeight.bold),),
+            child: new Text(
+              'Categories',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
           ),
           // Horizontal listview
           HorizontalList(),
-          
-           new Padding(
+
+          new Padding(
             padding: const EdgeInsets.all(10.0),
-            child: new Text('Recent books',style: TextStyle(fontWeight: FontWeight.bold)),
+            child: new Text('Recent books',
+                style: TextStyle(fontWeight: FontWeight.bold)),
           ),
-          
+
           //gridView
           Container(
             height: 320.0,
@@ -140,4 +148,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
- 
