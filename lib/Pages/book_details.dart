@@ -57,41 +57,6 @@ class _BookDetailsState extends State<BookDetails> {
           Row(
             children: <Widget>[
               Expanded(
-                  child: MaterialButton(
-                onPressed: () {
-                  showDialog(
-                      context: context,
-                      builder: (context) {
-                        return new AlertDialog(
-                          title: new Text("Quantity"),
-                          content: new Text("Number of books"),
-                          actions: <Widget>[
-                            new MaterialButton(
-                              onPressed: () {
-                                Navigator.of(context).pop(context);
-                              },
-                              child: new Text("Close"),
-                            )
-                          ],
-                        );
-                      });
-                },
-                color: Colors.white,
-                textColor: Colors.grey,
-                child: Row(
-                  children: <Widget>[
-                    Expanded(
-                      child: new Text("quantity"),
-                    ),
-                    Expanded(child: new Icon(Icons.arrow_drop_down))
-                  ],
-                ),
-              ))
-            ],
-          ),
-          Row(
-            children: <Widget>[
-              Expanded(
                 child: MaterialButton(
                   onPressed: () {},
                   color: Colors.myOrange,
@@ -136,7 +101,7 @@ class _BookDetailsState extends State<BookDetails> {
               ),
             ],
           ),
-           new Row(
+          new Row(
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.fromLTRB(12, 5, 5, 7),
@@ -151,7 +116,7 @@ class _BookDetailsState extends State<BookDetails> {
               ),
             ],
           ),
-           new Row(
+          new Row(
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.fromLTRB(12, 5, 5, 7),
@@ -168,8 +133,12 @@ class _BookDetailsState extends State<BookDetails> {
           ),
           Divider(),
           Padding(
-            padding:const EdgeInsets.fromLTRB(12, 5, 5, 7),
-            child: new Text("Similer books", style: TextStyle(fontWeight: FontWeight.bold),),),
+            padding: const EdgeInsets.fromLTRB(12, 5, 5, 7),
+            child: new Text(
+              "Similer books",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ),
           // Similer books section
           Container(
             height: 360.0,
@@ -204,7 +173,7 @@ class _Similer_booksState extends State<Similer_books> {
       "price": 100,
     }
   ];
-   Widget build(BuildContext context) {
+  Widget build(BuildContext context) {
     return GridView.builder(
       itemCount: productList.length,
       gridDelegate:
@@ -219,6 +188,7 @@ class _Similer_booksState extends State<Similer_books> {
     );
   }
 }
+
 class SimSingleBook extends StatelessWidget {
   final book_name;
   final book_pict;
@@ -245,9 +215,19 @@ class SimSingleBook extends StatelessWidget {
                     child: new Row(
                       children: <Widget>[
                         Expanded(
-                          child: new Text(book_name,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.0),),
+                          child: new Text(
+                            book_name,
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 12.0),
+                          ),
                         ),
-                        new Text("${book_price} SR",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.0,color: Colors.red),)
+                        new Text(
+                          "${book_price} SR",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12.0,
+                              color: Colors.red),
+                        )
                       ],
                     )),
                 child: Image.asset(

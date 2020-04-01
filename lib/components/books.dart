@@ -67,9 +67,19 @@ class SingleBook extends StatelessWidget {
                     child: new Row(
                       children: <Widget>[
                         Expanded(
-                          child: new Text(book_name,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.0),),
+                          child: new Text(
+                            book_name,
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 13.0),
+                          ),
                         ),
-                        new Text("${book_price} SR",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12.0,color: Colors.red),)
+                        new Text(
+                          "${book_price} SR",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 13.0,
+                              color: Colors.red),
+                        )
                       ],
                     )),
                 child: Image.asset(

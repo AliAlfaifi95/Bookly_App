@@ -47,7 +47,8 @@ class _HomePageState extends State<HomePage> {
           new IconButton(
               icon: Icon(Icons.shopping_cart, color: Colors.white),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => new Cart()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => new Cart()));
               })
         ],
       ),
@@ -73,28 +74,28 @@ class _HomePageState extends State<HomePage> {
               onTap: () {},
               child: ListTile(
                 title: Text('Home Page'),
-                leading: Icon(Icons.home,color: Colors.myOrange),
+                leading: Icon(Icons.home, color: Colors.myOrange),
               ),
             ),
             InkWell(
               onTap: () {},
               child: ListTile(
                 title: Text('My Account'),
-                leading: Icon(Icons.person,color: Colors.myOrange),
+                leading: Icon(Icons.person, color: Colors.myOrange),
               ),
             ),
             InkWell(
               onTap: () {},
               child: ListTile(
                 title: Text('My Orders'),
-                leading: Icon(Icons.shopping_basket,color: Colors.myOrange),
+                leading: Icon(Icons.shopping_basket, color: Colors.myOrange),
               ),
             ),
             InkWell(
               onTap: () {},
               child: ListTile(
                 title: Text('Favorites'),
-                leading: Icon(Icons.favorite,color: Colors.myOrange),
+                leading: Icon(Icons.favorite, color: Colors.myOrange),
               ),
             ),
             Divider(),

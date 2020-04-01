@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:bookly_app/components/cartBook.dart';
 class Cart extends StatefulWidget {
   @override
   _CartState createState() => _CartState();
@@ -17,6 +17,7 @@ class _CartState extends State<Cart> {
               icon: Icon(Icons.search, color: Colors.white), onPressed: () {}),
         ],
       ),
+      body: new CartBooks(),
       bottomNavigationBar: new Container(
           color: Colors.white,
           child: Row(
