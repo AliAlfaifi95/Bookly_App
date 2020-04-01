@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "755093111859",
+    "firebase_url": "https://bookly-4d62f.firebaseio.com",
+    "project_id": "bookly-4d62f",
+    "storage_bucket": "bookly-4d62f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755093111859:android:d472fd019ee8a01bbc8f46",
+        "android_client_info": {
+          "package_name": "com.example.bookly_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755093111859-5dflhnl65q0mi5fj0mm068ghtdki6h0m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bookly_app",
+            "certificate_hash": "5fea1487b5db8a32c963b522c0c876e13f5ef9b1"
+          }
+        },
+        {
+          "client_id": "755093111859-rbbuhid7ob0m5kqdc28jg8hb9tjca7i1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSO4jj5ZfUHqwY21B8FW3GzEwycb3STrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755093111859-rbbuhid7ob0m5kqdc28jg8hb9tjca7i1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

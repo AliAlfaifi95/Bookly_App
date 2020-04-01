@@ -38,6 +38,24 @@
       "languageVersion": "1.0"
     },
     {
+      "name": "cloud_firestore",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-0.13.4+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "cloud_firestore_platform_interface",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_platform_interface-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "cloud_firestore_web",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_web-0.1.1+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "collection",
       "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11",
       "packageUri": "lib/",
@@ -62,6 +80,48 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "firebase",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase-7.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
+    },
+    {
+      "name": "firebase_auth",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.15.5+3",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "firebase_auth_platform_interface",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_platform_interface-1.1.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "firebase_auth_web",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-0.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "firebase_core",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.4.4+3",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "firebase_core_platform_interface",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "firebase_core_web",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.1.1+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "flutter",
       "rootUri": "file:///Users/alialfaifi/Development/flutter/packages/flutter",
       "packageUri": "lib/",
@@ -74,10 +134,58 @@
       "languageVersion": "2.2"
     },
     {
+      "name": "flutter_web_plugins",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/packages/flutter_web_plugins",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "fluttertoast",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-4.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "google_sign_in",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-4.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "google_sign_in_platform_interface",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_platform_interface-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "google_sign_in_web",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_web-0.8.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
+    },
+    {
+      "name": "http",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.0+4",
+      "packageUri": "lib/",
+      "languageVersion": "2.4"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-3.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
       "name": "image",
       "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/image-2.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.0"
+    },
+    {
+      "name": "js",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "1.19"
     },
     {
       "name": "matcher",
@@ -110,8 +218,38 @@
       "languageVersion": "2.4"
     },
     {
+      "name": "plugin_platform_interface",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "quiver",
       "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-2.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "shared_preferences",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.6+3",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "shared_preferences_macos",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-0.0.1+6",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "shared_preferences_platform_interface",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_platform_interface-1.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "shared_preferences_web",
+      "rootUri": "file:///Users/alialfaifi/Development/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-0.1.2+4",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
@@ -182,7 +320,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-03-19T13:35:59.875900Z",
+  "generated": "2020-04-01T22:20:01.233230Z",
   "generator": "pub",
   "generatorVersion": "2.7.0"
 }
