@@ -142,7 +142,7 @@ class _BookDetailsState extends State<BookDetails> {
           // Similer books section
           Container(
             height: 360.0,
-            child: Similer_books(),
+            child: SimilerBooks(),
           ),
         ],
       ),
@@ -150,12 +150,12 @@ class _BookDetailsState extends State<BookDetails> {
   }
 }
 
-class Similer_books extends StatefulWidget {
+class SimilerBooks extends StatefulWidget {
   @override
-  _Similer_booksState createState() => _Similer_booksState();
+  _SimilerBooks createState() => _SimilerBooks();
 }
 
-class _Similer_booksState extends State<Similer_books> {
+class _SimilerBooks extends State<SimilerBooks> {
   var productList = [
     {
       "name": "An American Mirriage",
@@ -180,9 +180,9 @@ class _Similer_booksState extends State<Similer_books> {
           new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
       itemBuilder: (BuildContext context, int index) {
         return SimSingleBook(
-          book_name: productList[index]['name'],
-          book_pict: productList[index]['picture'],
-          book_price: productList[index]['price'],
+          bookName: productList[index]['name'],
+          bookPict: productList[index]['picture'],
+          bookPrice: productList[index]['price'],
         );
       },
     );
@@ -190,24 +190,24 @@ class _Similer_booksState extends State<Similer_books> {
 }
 
 class SimSingleBook extends StatelessWidget {
-  final book_name;
-  final book_pict;
-  final book_price;
+  final bookName;
+  final bookPict;
+  final bookPrice;
 
-  SimSingleBook({this.book_name, this.book_pict, this.book_price});
+  SimSingleBook({this.bookName, this.bookPict, this.bookPrice});
   @override
   Widget build(BuildContext context) {
     return Card(
       child: Hero(
-          tag: book_name,
+          tag: bookName,
           child: Material(
             child: InkWell(
               onTap: () => Navigator.of(context).push(new MaterialPageRoute(
                   // Passing details to the bookdetail page
                   builder: (context) => new BookDetails(
-                        bookName: book_name,
-                        bookImage: book_pict,
-                        bookPrice: book_price,
+                        bookName: bookName,
+                        bookImage: bookPict,
+                        bookPrice: bookPrice,
                       ))),
               child: GridTile(
                 footer: Container(
@@ -216,13 +216,13 @@ class SimSingleBook extends StatelessWidget {
                       children: <Widget>[
                         Expanded(
                           child: new Text(
-                            book_name,
+                            bookName,
                             style: TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 12.0),
                           ),
                         ),
                         new Text(
-                          "${book_price} SR",
+                          "${bookPrice} SR",
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 12.0,
@@ -231,7 +231,7 @@ class SimSingleBook extends StatelessWidget {
                       ],
                     )),
                 child: Image.asset(
-                  book_pict,
+                  bookPict,
                   fit: BoxFit.fitHeight,
                 ),
               ),

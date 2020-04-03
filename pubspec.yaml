@@ -66,6 +66,8 @@ flutter:
     - images/cat/Technology.jpg
     - images/cat/Literature.jpg
     - images/cat/History&Geography.jpg
+    - images/background.jpg
+    - images/logo.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
