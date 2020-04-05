@@ -346,7 +346,6 @@ class _AddBooksState extends State<AddBooks> {
           _bookServices.uploadBook(
               bookName: bookName.text,
               bookDetails: bookDetails.text,
-              bookCat: imageUrl1,
               bookStates: bookState.text,
               images: imageList,
               prices: double.parse(bookPrice.text));
