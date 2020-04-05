@@ -28,6 +28,9 @@ dependencies:
   fluttertoast: ^4.0.1
   firebase_database:
   uuid:
+  image_picker: ^0.6.4
+  flutter_typeahead: ^1.8.0
+  firebase_storage: ^3.1.5
 
 
 

@@ -1,3 +1,4 @@
+import 'package:bookly_app/components/addBook.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:bookly_app/components/horizontal_LV.dart';
@@ -34,7 +35,10 @@ class _HomePageState extends State<HomePage> {
       appBar: new AppBar(
         backgroundColor: Colors.orangeAccent,
         iconTheme: new IconThemeData(color: Colors.white),
-        title: Text('BOOKLY',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+        title: Text(
+          'BOOKLY',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
         actions: <Widget>[
           new IconButton(
               icon: Icon(Icons.search, color: Colors.white), onPressed: () {}),
@@ -47,7 +51,6 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       drawer: new Drawer(
-        
         child: new ListView(
           children: <Widget>[
             //header
@@ -83,16 +86,24 @@ class _HomePageState extends State<HomePage> {
               onTap: () {},
               child: ListTile(
                 title: Text('My Orders'),
-                leading: Icon(Icons.shopping_basket, color: Colors.orangeAccent),
+                leading:
+                    Icon(Icons.shopping_basket, color: Colors.orangeAccent),
               ),
             ),
             InkWell(
               onTap: () {
-
+                Navigator.push(context, MaterialPageRoute(builder: (_) => AddBooks()));
               },
               child: ListTile(
                 title: Text('Sell book'),
                 leading: Icon(Icons.library_add, color: Colors.orangeAccent),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: ListTile(
+                title: Text('Favorite'),
+                leading: Icon(Icons.favorite, color: Colors.orangeAccent),
               ),
             ),
             Divider(),
@@ -110,6 +121,10 @@ class _HomePageState extends State<HomePage> {
               onTap: () {},
               child: ListTile(
                 title: Text('About us'),
+                leading: Icon(
+                  Icons.info,
+                  color: Colors.blue,
+                ),
               ),
             ),
           ],
