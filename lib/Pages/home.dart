@@ -69,7 +69,10 @@ class _HomePageState extends State<HomePage> {
             ),
             //Body
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => new HomePage()));
+              },
               child: ListTile(
                 title: Text('Home Page'),
                 leading: Icon(Icons.home, color: Colors.orangeAccent),
