@@ -15,8 +15,9 @@ class _BookDetailsState extends State<BookDetails> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
-        backgroundColor: Colors.myOrange,
-        title: Text('BOOKLY'),
+        backgroundColor: Colors.orangeAccent,
+        title: Text('BOOKLY',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+        iconTheme: new IconThemeData(color: Colors.white),
         actions: <Widget>[
           new IconButton(
               icon: Icon(Icons.search, color: Colors.white), onPressed: () {}),
@@ -59,7 +60,7 @@ class _BookDetailsState extends State<BookDetails> {
               Expanded(
                 child: MaterialButton(
                   onPressed: () {},
-                  color: Colors.myOrange,
+                  color: Colors.orangeAccent,
                   textColor: Colors.white,
                   elevation: 2.0,
                   child: new Text("Buy"),
@@ -68,11 +69,11 @@ class _BookDetailsState extends State<BookDetails> {
               new IconButton(
                   icon: Icon(
                     Icons.add_shopping_cart,
-                    color: Colors.myOrange,
+                    color: Colors.orangeAccent,
                   ),
                   onPressed: () {}),
               new IconButton(
-                  icon: Icon(Icons.favorite_border, color: Colors.myOrange),
+                  icon: Icon(Icons.favorite_border, color: Colors.orangeAccent),
                   onPressed: () {}),
             ],
           ),

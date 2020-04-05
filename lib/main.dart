@@ -5,7 +5,7 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
-      primaryColor: Colors.myOrange
+      primaryColor: Colors.orangeAccent
     ),
     home: Login(),
   ));

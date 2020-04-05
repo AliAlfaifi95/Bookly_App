@@ -1,10 +1,8 @@
+import 'package:bookly_app/Pages/home.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:google_sign_in/google_sign_in.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:bookly_app/Pages/login.dart';
+import 'package:bookly_app/Database/users.dart';
 
 class Register extends StatefulWidget {
   @override
@@ -14,11 +12,11 @@ class Register extends StatefulWidget {
 class _RegisterState extends State<Register> {
   final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
   final _formkey = GlobalKey<FormState>();
+  UserServices _userServices = UserServices();
   TextEditingController _email = TextEditingController();
   TextEditingController _passowrd = TextEditingController();
   TextEditingController _name = TextEditingController();
   TextEditingController _confirmPassword = TextEditingController();
-  
   bool loading = false;
 
   @override
@@ -71,11 +69,12 @@ class _RegisterState extends State<Register> {
                                 decoration: InputDecoration(
                                   hintText: "Full name",
                                   icon: Icon(Icons.person_outline),
+                                  border: InputBorder.none,
                                 ),
                                 validator: (value) {
                                   if (value.isEmpty) {
                                     return "name can't be empty";
-                                  } 
+                                  }
                                 },
                               ),
                             ),
@@ -94,6 +93,7 @@ class _RegisterState extends State<Register> {
                                 decoration: InputDecoration(
                                   hintText: "Email",
                                   icon: Icon(Icons.alternate_email),
+                                  border: InputBorder.none,
                                 ),
                                 validator: (value) {
                                   if (value.isEmpty) {
@@ -120,9 +120,11 @@ class _RegisterState extends State<Register> {
                               padding: const EdgeInsets.only(left: 12.0),
                               child: TextFormField(
                                 controller: _passowrd,
+                                obscureText: true,
                                 decoration: InputDecoration(
                                   hintText: "Password",
                                   icon: Icon(Icons.lock_outline),
+                                  border: InputBorder.none,
                                 ),
                                 validator: (value) {
                                   if (value.isEmpty) {
@@ -145,15 +147,19 @@ class _RegisterState extends State<Register> {
                               padding: const EdgeInsets.only(left: 12.0),
                               child: TextFormField(
                                 controller: _confirmPassword,
+                                obscureText: true,
                                 decoration: InputDecoration(
                                   hintText: "Confirm password",
                                   icon: Icon(Icons.lock_outline),
+                                  border: InputBorder.none,
                                 ),
                                 validator: (value) {
                                   if (value.isEmpty) {
                                     return "password can't be empty";
                                   } else if (value.length < 6) {
                                     return "password must be longer than 6 charachters";
+                                  } else if (_passowrd.text != value) {
+                                    return "password do not match";
                                   }
                                 },
                               ),
@@ -164,10 +170,12 @@ class _RegisterState extends State<Register> {
                           padding: const EdgeInsets.all(8.0),
                           child: Material(
                             borderRadius: BorderRadius.circular(15.0),
-                            color: Colors.myOrange,
+                            color: Colors.orangeAccent,
                             elevation: 0.0,
                             child: MaterialButton(
-                              onPressed: () {},
+                              onPressed: () async {
+                                validateForm();
+                              },
                               minWidth: MediaQuery.of(context).size.width,
                               child: Text(
                                 "Register",
@@ -180,20 +188,27 @@ class _RegisterState extends State<Register> {
                           ),
                         ),
                         Divider(),
-                        Text('You have an account?',style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),textAlign: TextAlign.center),
+                        Text('You have an account?',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.center),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Material(
                             borderRadius: BorderRadius.circular(15.0),
-                            color: Colors.myOrange,
+                            color: Colors.orangeAccent,
                             elevation: 0.0,
                             child: MaterialButton(
                               onPressed: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context)=> Login()));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Login()));
                               },
                               minWidth: MediaQuery.of(context).size.width,
                               child: Text(
-                                "Login", 
+                                "Login",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                     color: Colors.white,
@@ -216,7 +231,7 @@ class _RegisterState extends State<Register> {
                 alignment: Alignment.center,
                 color: Colors.white,
                 child: CircularProgressIndicator(
-                  valueColor: AlwaysStoppedAnimation<Color>(Colors.myOrange),
+                  valueColor: AlwaysStoppedAnimation<Color>(Colors.orangeAccent),
                 ),
               ),
             ),
@@ -224,5 +239,32 @@ class _RegisterState extends State<Register> {
         ],
       ),
     );
+  }
+
+  Future validateForm() async {
+    FormState formState = _formkey.currentState;
+    if (formState.validate()) {
+      formState.reset();
+      FirebaseUser currentUser = await firebaseAuth.currentUser();
+      if (currentUser == null) {
+        firebaseAuth
+            .createUserWithEmailAndPassword(
+                email: _email.text,
+                password: _passowrd.text)
+            .then((user) => {
+              _userServices.createUser(
+            {
+            "username": _name.text,
+            "email": _email.text,
+            "userId": currentUser.uid,
+            }
+        )
+        }).catchError((err) => {print(err.toString()) });
+
+    Navigator.pushReplacement(
+    context, MaterialPageRoute(builder: (context) => HomePage()));
+
+      }
+    }
   }
 }

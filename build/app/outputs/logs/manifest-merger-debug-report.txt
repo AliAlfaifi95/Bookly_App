@@ -12,6 +12,7 @@ MERGED from [:firebase_auth] /Users/alialfaifi/Desktop/Project_/Bookly/build/fir
 MERGED from [:firebase_auth_web] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_auth_web/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:cloud_firestore] /Users/alialfaifi/Desktop/Project_/Bookly/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:cloud_firestore_web] /Users/alialfaifi/Desktop/Project_/Bookly/build/cloud_firestore_web/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:firebase_database] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_core] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_core_web] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_core_web/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:shared_preferences] /Users/alialfaifi/Desktop/Project_/Bookly/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
@@ -25,6 +26,7 @@ MERGED from [com.google.android.gms:play-services-measurement-api:17.2.2] /Users
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/7043a9d5f4a737f3f819087d2037f972/play-services-measurement-sdk-17.2.2/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/1f2aec059dd55b754072b023fc358644/jetified-play-services-auth-16.0.1/AndroidManifest.xml:17:1-39:12
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/c1e6fd80f4ebace89db29bd1312080e7/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/45f17adf0ebfe50767c1dda097dc6f6d/jetified-firebase-database-17.0.0/AndroidManifest.xml:15:1-36:12
 MERGED from [com.google.firebase:firebase-iid:20.0.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:17:1-47:12
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/516d475c610d5ee0701cc5d0e0043980/firebase-auth-interop-19.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/b459cd1a0a6d08f44c2f8d38dbb843da/jetified-firebase-common-19.3.0/AndroidManifest.xml:15:1-39:12
@@ -90,6 +92,8 @@ MERGED from [:firebase_auth] /Users/alialfaifi/Desktop/Project_/Bookly/build/fir
 MERGED from [:firebase_auth] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:cloud_firestore] /Users/alialfaifi/Desktop/Project_/Bookly/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:cloud_firestore] /Users/alialfaifi/Desktop/Project_/Bookly/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_database] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_database] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [com.google.firebase:firebase-analytics:17.2.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/2a70ee504bd32b1bd949b6dd58d86852/firebase-analytics-17.2.2/AndroidManifest.xml:7:5-20
@@ -106,6 +110,8 @@ MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/alialfaifi
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/1f2aec059dd55b754072b023fc358644/jetified-play-services-auth-16.0.1/AndroidManifest.xml:22:5-37:19
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/c1e6fd80f4ebace89db29bd1312080e7/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/c1e6fd80f4ebace89db29bd1312080e7/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/45f17adf0ebfe50767c1dda097dc6f6d/jetified-firebase-database-17.0.0/AndroidManifest.xml:28:5-34:19
+MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/45f17adf0ebfe50767c1dda097dc6f6d/jetified-firebase-database-17.0.0/AndroidManifest.xml:28:5-34:19
 MERGED from [com.google.firebase:firebase-iid:20.0.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:28:5-45:19
 MERGED from [com.google.firebase:firebase-iid:20.0.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:28:5-45:19
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/516d475c610d5ee0701cc5d0e0043980/firebase-auth-interop-19.0.0/AndroidManifest.xml:7:5-8:19
@@ -190,6 +196,8 @@ MERGED from [:cloud_firestore] /Users/alialfaifi/Desktop/Project_/Bookly/build/c
 MERGED from [:cloud_firestore] /Users/alialfaifi/Desktop/Project_/Bookly/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:cloud_firestore_web] /Users/alialfaifi/Desktop/Project_/Bookly/build/cloud_firestore_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:cloud_firestore_web] /Users/alialfaifi/Desktop/Project_/Bookly/build/cloud_firestore_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_database] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_database] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core_web] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_core_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
@@ -216,6 +224,8 @@ MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/alialfaifi
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/1f2aec059dd55b754072b023fc358644/jetified-play-services-auth-16.0.1/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/c1e6fd80f4ebace89db29bd1312080e7/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/c1e6fd80f4ebace89db29bd1312080e7/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/45f17adf0ebfe50767c1dda097dc6f6d/jetified-firebase-database-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/45f17adf0ebfe50767c1dda097dc6f6d/jetified-firebase-database-17.0.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-iid:20.0.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid:20.0.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/516d475c610d5ee0701cc5d0e0043980/firebase-auth-interop-19.0.0/AndroidManifest.xml:5:5-44
@@ -318,6 +328,8 @@ MERGED from [com.google.android.gms:play-services-measurement-api:17.2.2] /Users
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/ca912bff2260618b5b638fe661521702/play-services-measurement-api-17.2.2/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/c1e6fd80f4ebace89db29bd1312080e7/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/c1e6fd80f4ebace89db29bd1312080e7/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/45f17adf0ebfe50767c1dda097dc6f6d/jetified-firebase-database-17.0.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/45f17adf0ebfe50767c1dda097dc6f6d/jetified-firebase-database-17.0.0/AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-iid:20.0.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:20.0.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/160985c233e23f79bad9a37e22a7158f/play-services-measurement-impl-17.2.2/AndroidManifest.xml:23:5-67
@@ -330,6 +342,8 @@ service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [:firebase_auth] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [:cloud_firestore] /Users/alialfaifi/Desktop/Project_/Bookly/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [:cloud_firestore] /Users/alialfaifi/Desktop/Project_/Bookly/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_database] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_database] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_core] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_core] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [com.google.firebase:firebase-auth:19.2.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:33:9-39:19
@@ -338,6 +352,8 @@ MERGED from [com.google.android.gms:play-services-measurement-api:17.2.2] /Users
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/ca912bff2260618b5b638fe661521702/play-services-measurement-api-17.2.2/AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/c1e6fd80f4ebace89db29bd1312080e7/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:17:9-23:19
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/c1e6fd80f4ebace89db29bd1312080e7/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/45f17adf0ebfe50767c1dda097dc6f6d/jetified-firebase-database-17.0.0/AndroidManifest.xml:29:9-33:19
+MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/45f17adf0ebfe50767c1dda097dc6f6d/jetified-firebase-database-17.0.0/AndroidManifest.xml:29:9-33:19
 MERGED from [com.google.firebase:firebase-iid:20.0.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-iid:20.0.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/b459cd1a0a6d08f44c2f8d38dbb843da/jetified-firebase-common-19.3.0/AndroidManifest.xml:32:9-36:35
@@ -362,6 +378,12 @@ ADDED from [:cloud_firestore] /Users/alialfaifi/Desktop/Project_/Bookly/build/cl
 		ADDED from [:cloud_firestore] /Users/alialfaifi/Desktop/Project_/Bookly/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
 		ADDED from [:cloud_firestore] /Users/alialfaifi/Desktop/Project_/Bookly/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-133
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_database] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_database] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_database] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-127
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar
 ADDED from [:firebase_core] /Users/alialfaifi/Desktop/Project_/Bookly/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
@@ -396,6 +418,8 @@ MERGED from [com.google.android.gms:play-services-measurement-api:17.2.2] /Users
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/ca912bff2260618b5b638fe661521702/play-services-measurement-api-17.2.2/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/c1e6fd80f4ebace89db29bd1312080e7/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:13:5-79
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/c1e6fd80f4ebace89db29bd1312080e7/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/45f17adf0ebfe50767c1dda097dc6f6d/jetified-firebase-database-17.0.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/45f17adf0ebfe50767c1dda097dc6f6d/jetified-firebase-database-17.0.0/AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-iid:20.0.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-iid:20.0.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/160985c233e23f79bad9a37e22a7158f/play-services-measurement-impl-17.2.2/AndroidManifest.xml:24:5-79
@@ -498,6 +522,12 @@ ADDED from [com.google.firebase:firebase-firestore:21.3.0] /Users/alialfaifi/.gr
 		ADDED from [com.google.firebase:firebase-firestore:21.3.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/c1e6fd80f4ebace89db29bd1312080e7/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:22:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore:21.3.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/c1e6fd80f4ebace89db29bd1312080e7/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:21:17-111
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/45f17adf0ebfe50767c1dda097dc6f6d/jetified-firebase-database-17.0.0/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/45f17adf0ebfe50767c1dda097dc6f6d/jetified-firebase-database-17.0.0/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/45f17adf0ebfe50767c1dda097dc6f6d/jetified-firebase-database-17.0.0/AndroidManifest.xml:31:17-109
 uses-permission#com.google.android.c2dm.permission.RECEIVE
 ADDED from [com.google.firebase:firebase-iid:20.0.2] /Users/alialfaifi/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:26:5-82
 	android:name

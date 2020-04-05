@@ -32,6 +32,15 @@ class _LoginState extends State<Login> {
     setState(() {
       loading = true;
     });
+    
+    await firebaseAuth.currentUser().then((user){
+      if(user != null){
+        setState(() {
+          isLogedin = true;
+        });
+      }
+
+    });
 
     preferences = await SharedPreferences.getInstance();
     // isLogedin = await googleSignIn.isSignedIn();
@@ -145,6 +154,7 @@ class _LoginState extends State<Login> {
                                 decoration: InputDecoration(
                                   hintText: "Email",
                                   icon: Icon(Icons.alternate_email),
+                                  border: InputBorder.none,
                                 ),
                                 validator: (value) {
                                   if (value.isEmpty) {
@@ -171,9 +181,11 @@ class _LoginState extends State<Login> {
                               padding: const EdgeInsets.only(left: 12.0),
                               child: TextFormField(
                                 controller: _passowrd,
+                                obscureText: true,
                                 decoration: InputDecoration(
                                   hintText: "Password",
                                   icon: Icon(Icons.lock_outline),
+                                  border: InputBorder.none,
                                 ),
                                 validator: (value) {
                                   if (value.isEmpty) {
@@ -190,7 +202,7 @@ class _LoginState extends State<Login> {
                           padding: const EdgeInsets.all(8.0),
                           child: Material(
                             borderRadius: BorderRadius.circular(15.0),
-                            color: Colors.myOrange,
+                            color: Colors.orangeAccent,
                             elevation: 0.0,
                             child: MaterialButton(
                               onPressed: () {},
@@ -211,7 +223,7 @@ class _LoginState extends State<Login> {
                           padding: const EdgeInsets.all(8.0),
                           child: Material(
                             borderRadius: BorderRadius.circular(15.0),
-                            color: Colors.myOrange,
+                            color: Colors.orangeAccent,
                             elevation: 0.0,
                             child: MaterialButton(
                               onPressed: () {
@@ -242,7 +254,7 @@ class _LoginState extends State<Login> {
                 alignment: Alignment.center,
                 color: Colors.white,
                 child: CircularProgressIndicator(
-                  valueColor: AlwaysStoppedAnimation<Color>(Colors.myOrange),
+                  valueColor: AlwaysStoppedAnimation<Color>(Colors.orangeAccent),
                 ),
               ),
             ),

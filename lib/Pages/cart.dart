@@ -10,8 +10,9 @@ class _CartState extends State<Cart> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
-        backgroundColor: Colors.myOrange,
-        title: Text('BOOKLY'),
+        backgroundColor: Colors.orangeAccent,
+        iconTheme: new IconThemeData(color: Colors.white),
+        title: Text('BOOKLY',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
         actions: <Widget>[
           new IconButton(
               icon: Icon(Icons.search, color: Colors.white), onPressed: () {}),
@@ -35,7 +36,7 @@ class _CartState extends State<Cart> {
                     "Check out",
                     style: TextStyle(color: Colors.white),
                   ),
-                  color: Colors.myOrange,
+                  color: Colors.orangeAccent,
                 ),
               ),
             ],

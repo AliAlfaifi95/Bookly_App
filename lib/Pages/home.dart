@@ -27,13 +27,14 @@ class _HomePageState extends State<HomePage> {
         dotSize: 4.0,
         indicatorBgPadding: 0.0,
         dotBgColor: Colors.transparent,
-        dotIncreasedColor: Colors.myOrange,
+        dotIncreasedColor: Colors.orangeAccent,
       ),
     );
     return Scaffold(
       appBar: new AppBar(
-        backgroundColor: Colors.myOrange,
-        title: Text('BOOKLY'),
+        backgroundColor: Colors.orangeAccent,
+        iconTheme: new IconThemeData(color: Colors.white),
+        title: Text('BOOKLY',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
         actions: <Widget>[
           new IconButton(
               icon: Icon(Icons.search, color: Colors.white), onPressed: () {}),
@@ -46,6 +47,7 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       drawer: new Drawer(
+        
         child: new ListView(
           children: <Widget>[
             //header
@@ -59,7 +61,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               decoration: new BoxDecoration(
-                color: Colors.myOrange,
+                color: Colors.orangeAccent,
               ),
             ),
             //Body
@@ -67,28 +69,30 @@ class _HomePageState extends State<HomePage> {
               onTap: () {},
               child: ListTile(
                 title: Text('Home Page'),
-                leading: Icon(Icons.home, color: Colors.myOrange),
+                leading: Icon(Icons.home, color: Colors.orangeAccent),
               ),
             ),
             InkWell(
               onTap: () {},
               child: ListTile(
                 title: Text('My Account'),
-                leading: Icon(Icons.person, color: Colors.myOrange),
+                leading: Icon(Icons.person, color: Colors.orangeAccent),
               ),
             ),
             InkWell(
               onTap: () {},
               child: ListTile(
                 title: Text('My Orders'),
-                leading: Icon(Icons.shopping_basket, color: Colors.myOrange),
+                leading: Icon(Icons.shopping_basket, color: Colors.orangeAccent),
               ),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+
+              },
               child: ListTile(
-                title: Text('Favorites'),
-                leading: Icon(Icons.favorite, color: Colors.myOrange),
+                title: Text('Sell book'),
+                leading: Icon(Icons.library_add, color: Colors.orangeAccent),
               ),
             ),
             Divider(),
@@ -106,7 +110,6 @@ class _HomePageState extends State<HomePage> {
               onTap: () {},
               child: ListTile(
                 title: Text('About us'),
-                leading: Icon(Icons.info, color: Colors.blue),
               ),
             ),
           ],
