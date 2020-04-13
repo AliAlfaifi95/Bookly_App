@@ -20,12 +20,13 @@ class BookDetails extends StatefulWidget {
 
 class _BookDetailsState extends State<BookDetails> {
   @override
+  Color buttonColor = Colors.orangeAccent;
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
         backgroundColor: Colors.orangeAccent,
         title: Text(
-          'BOOKLY',
+          widget.bookName,
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
         iconTheme: new IconThemeData(color: Colors.white),
@@ -86,9 +87,16 @@ class _BookDetailsState extends State<BookDetails> {
                     color: Colors.orangeAccent,
                   ),
                   onPressed: () {}),
-              new IconButton(
-                  icon: Icon(Icons.favorite_border, color: Colors.orangeAccent),
-                  onPressed: () {}),
+              new IconButton( 
+                  icon: Icon(Icons.favorite_border, color: buttonColor),
+                  onPressed: () {
+                    setState(() {
+                      if(buttonColor == Colors.orangeAccent)
+                        buttonColor = Colors.red;
+                        else
+                        buttonColor = Colors.orangeAccent;
+                    });
+                  }),
             ],
           ),
           Divider(),

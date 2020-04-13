@@ -1,3 +1,8 @@
+import 'package:bookly_app/Pages/Settings.dart';
+import 'package:bookly_app/Pages/aboutUs.dart';
+import 'package:bookly_app/Pages/account.dart';
+import 'package:bookly_app/Pages/favorite.dart';
+import 'package:bookly_app/Pages/orders.dart';
 import 'package:bookly_app/components/addBook.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
@@ -79,14 +84,20 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                 Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => new Account()));
+              },
               child: ListTile(
                 title: Text('My Account'),
                 leading: Icon(Icons.person, color: Colors.orangeAccent),
               ),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => new Orders()));
+              },
               child: ListTile(
                 title: Text('My Orders'),
                 leading:
@@ -103,7 +114,10 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => new Fav()));
+              },
               child: ListTile(
                 title: Text('Favorite'),
                 leading: Icon(Icons.favorite, color: Colors.orangeAccent),
@@ -111,7 +125,10 @@ class _HomePageState extends State<HomePage> {
             ),
             Divider(),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => new Settings()));
+              },
               child: ListTile(
                 title: Text('Settings'),
                 leading: Icon(
@@ -121,7 +138,10 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => new About()));
+              },
               child: ListTile(
                 title: Text('About us'),
                 leading: Icon(

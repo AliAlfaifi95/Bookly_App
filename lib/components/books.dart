@@ -4,6 +4,7 @@ import 'package:bookly_app/Pages/book_details.dart';
 class Books extends StatefulWidget {
   @override
   _BooksState createState() => _BooksState();
+  
 }
 
 class _BooksState extends State<Books> {
@@ -58,6 +59,7 @@ class SingleBook extends StatelessWidget {
   
 
   SingleBook({this.bookName, this.bookPict, this.bookPrice,this.bookAuthor,this.bookDetails});
+ 
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -104,4 +106,6 @@ class SingleBook extends StatelessWidget {
           )),
     );
   }
+
+  
 }

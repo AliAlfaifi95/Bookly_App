@@ -7,6 +7,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:image_picker/image_picker.dart';
 import '../Database/category.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:bookly_app/components/books.dart' as ab;
 
 class AddBooks extends StatefulWidget {
   @override
@@ -35,40 +36,21 @@ class _AddBooksState extends State<AddBooks> {
   File _image2;
   File _image3;
 
-  // @override
-  // void initState() {
-  //   _getCategories();
-  // }
-  //TODO: drop down menu not working
-  // List<DropdownMenuItem<String>> getCategoriesDropdown() {
-  //   List<DropdownMenuItem<String>> items = new List();
-  //   for (int i = 0; i < categories.length; i++) {
-  //     setState(() {
-  //       items.insert(
-  //           0,
-  //           DropdownMenuItem(
-  //               child: Text(categories[i].data['Category']),
-  //               value: categories[i].data['Category']));
-  //     });
-  //   }
-  //   return items;
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.1,
-        backgroundColor: white,
+        backgroundColor: orange,
         leading: IconButton(
-          icon: Icon(Icons.close,color: black),
+          icon: Icon(Icons.close,color: white),
           onPressed: (){
             Navigator.pop(context);
           },
         ),
         title: Text(
-          "add book",
-          style: TextStyle(color: black),
+          "SELL BOOK",
+          style: TextStyle(color: white),
         ),
       ),
       body: Form(
@@ -150,23 +132,6 @@ class _AddBooksState extends State<AddBooks> {
                   },
                 ),
               ),
-//              select category
-              // Row(
-              //   children: <Widget>[
-              //     Padding(
-              //       padding: const EdgeInsets.all(8.0),
-              //       child: Text(
-              //         'Category: ',
-              //         style: TextStyle(color: black),
-              //       ),
-              //     ),
-              //     DropdownButton(
-              //       items: categoriesDropDown,
-              //       onChanged: changeSelectedCategory,
-              //       value: _currentCategory,
-              //     ),
-              //   ],
-              // ),
               Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: TextFormField(
@@ -217,6 +182,7 @@ class _AddBooksState extends State<AddBooks> {
                 child: Text('add book'),
                 onPressed: () {
                   validateAndUpload();
+                  ab.SingleBook(bookName: bookName,bookDetails: bookDetails,bookPrice: bookPrice,bookPict: _image1,bookAuthor: "");
                 },
               )
             ],
@@ -225,16 +191,6 @@ class _AddBooksState extends State<AddBooks> {
       ),
     );
   }
-  //TODO: drop down menu not working
-  // _getCategories() async {
-  //   List<DocumentSnapshot> data = await _categoryService.getCategories();
-  //   print(data.length);
-  //   setState(() {
-  //     categories = data;
-  //     categoriesDropDown = getCategoriesDropdown();
-  //     _currentCategory = categories[0].data['Category'];
-  //   });
-  // }
 
   changeSelectedCategory(String selectedCategory) {
     setState(() => _currentCategory = selectedCategory);

@@ -73,6 +73,7 @@ flutter:
     - images/cat/History&Geography.jpg
     - images/background.jpg
     - images/logo.png
+    - images/person-icon.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
