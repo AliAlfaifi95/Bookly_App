@@ -92,7 +92,7 @@ class SingleBook extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                               fontSize: 13.0,
                               color: Colors.red),
-                        )
+                        ),
                       ],
                     )),
                 child: Image.asset(

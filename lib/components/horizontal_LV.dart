@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bookly_app/Pages/categories.dart';
 
 class HorizontalList extends StatelessWidget {
   @override
@@ -50,7 +51,10 @@ class Category extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(0.0),
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(context,
+          MaterialPageRoute(builder: (context) => new Categories()));
+        },
         child: Container(
           width: 130.0,
           child: ListTile(
