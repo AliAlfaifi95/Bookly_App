@@ -31,9 +31,9 @@ class _OrdersState extends State<Orders> {
                   ],
                   rows: [
                     DataRow(cells: [
-                      DataCell(Text('0001')),
-                      DataCell(Text('16/08/2020')),
-                      DataCell(Text('140 SR'),
+                      DataCell(Text('0021')),
+                      DataCell(Text('14/08/2020')),
+                      DataCell(Text('145 SR'),
                       )
                     ])
 

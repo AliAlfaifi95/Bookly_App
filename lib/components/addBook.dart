@@ -152,10 +152,8 @@ class _AddBooksState extends State<AddBooks> {
                   decoration: InputDecoration(hintText: 'Book details'),
                   validator: (value) {
                     if (value.isEmpty) {
-                      return 'You must enter the book name';
-                    } else if (value.length > 10) {
-                      return 'Book name cant have more than 10 letters';
-                    }
+                      return 'You must enter the book details';
+                    } 
                   },
                 ),
               ),

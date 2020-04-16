@@ -1,8 +1,6 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:bookly_app/components/cartBook.dart';
-
 import 'home.dart';
 
 class Cart extends StatefulWidget {
