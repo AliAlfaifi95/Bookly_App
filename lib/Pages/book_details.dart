@@ -42,7 +42,7 @@ class _BookDetailsState extends State<BookDetails> {
             child: GridTile(
               child: Container(
                 color: Colors.white70,
-                child: Image.asset(widget.bookImage),
+                child: Image.network(widget.bookImage),
               ),
             ),
           ),
