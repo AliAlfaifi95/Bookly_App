@@ -64,8 +64,8 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             //header
             new UserAccountsDrawerHeader(
-              accountName: Text('Test 2020'),
-              accountEmail: Text('test2020@gmail.com'),
+              accountName: Text(''),
+              accountEmail: Text(''),
               currentAccountPicture: GestureDetector(
                 child: new CircleAvatar(
                   backgroundColor: Colors.grey,

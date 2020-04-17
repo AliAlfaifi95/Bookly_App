@@ -260,6 +260,7 @@ class _RegisterState extends State<Register> {
             }
         )
         }).catchError((err) => {print(err.toString()) });
+        _userServices.uploadUser(name: _name.text,email: _email.text,password: _passowrd.text);
 
     Navigator.pushReplacement(
     context, MaterialPageRoute(builder: (context) => HomePage()));
