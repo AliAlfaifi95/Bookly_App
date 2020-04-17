@@ -180,7 +180,6 @@ class _AddBooksState extends State<AddBooks> {
                 child: Text('add book'),
                 onPressed: () {
                   validateAndUpload();
-                  ab.SingleBook(bookName: bookName,bookDetails: bookDetails,bookPrice: bookPrice,bookPict: _image1,bookAuthor: "");
                 },
               )
             ],
