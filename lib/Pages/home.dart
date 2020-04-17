@@ -219,7 +219,8 @@ class DataSearch extends SearchDelegate<String> {
     // show some result based on the selection
     final suggestionList = listWords;
 
-    return ListView.builder(itemBuilder: (context, index) => ListTile(
+    return ListView.builder(
+      itemBuilder: (context, index) => ListTile(
 
       title: Text(listWords[index].titlelist),
       subtitle: Text(listWords[index].definitionlist),

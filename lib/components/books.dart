@@ -71,7 +71,7 @@ class SingleBook extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Hero(
-          tag: bookName,
+          tag: new Text("hero1"),
           child: Material(
             child: InkWell(
               onTap: () => Navigator.of(context).push(new MaterialPageRoute(

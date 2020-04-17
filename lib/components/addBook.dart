@@ -5,9 +5,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:image_picker/image_picker.dart';
-import '../Database/category.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:bookly_app/components/books.dart' as ab;
 
 class AddBooks extends StatefulWidget {
   @override
@@ -16,7 +14,6 @@ class AddBooks extends StatefulWidget {
 
 class _AddBooksState extends State<AddBooks> {
   BookServices _bookServices = BookServices();
-  CategoryService _categoryService = CategoryService();
   GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   TextEditingController bookName = TextEditingController();
   TextEditingController bookState = TextEditingController();
@@ -54,6 +51,7 @@ class _AddBooksState extends State<AddBooks> {
         ),
       ),
       body: Form(
+
         key: _formKey,
         child: SingleChildScrollView(
           child: Column(
@@ -68,6 +66,7 @@ class _AddBooksState extends State<AddBooks> {
                               color: grey.withOpacity(0.5), width: 2.5),
                           onPressed: () {
                             _selectImage(
+  
                                 ImagePicker.pickImage(
                                     source: ImageSource.gallery),
                                 1);
