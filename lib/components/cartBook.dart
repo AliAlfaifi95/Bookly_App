@@ -1,39 +1,50 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class CartBooks extends StatefulWidget {
+
   @override
   _CartBooksState createState() => _CartBooksState();
 }
 
 class _CartBooksState extends State<CartBooks> {
-  var booksOn = [
-    {
-      "name": "An American Mirriage",
-      "picture": "images/1.jpg",
-      "price": 15,
-    },
-    {
-      "name": "Olive, Again",
-      "picture": "images/2.jpg",
-      "price": 30,
-    },
-    {
-      "name": "System Analysis and Design",
-      "picture": "images/3.jpg",
-      "price": 100,
+  Future getposts() async {
+      var firestore = Firestore.instance;
+      QuerySnapshot gn = await firestore.collection("Order").getDocuments();
+      print(gn.documents);
+      return gn.documents;
     }
-  ];
+
+    @override
+    void initState() {
+      super.initState();
+    }
 
   @override
   Widget build(BuildContext context) {
-    return new ListView.builder(
-      itemCount: booksOn.length,
-      itemBuilder: (context, index) {
-        return SingleCart(
-            bookName: booksOn[index]["name"],
-            bookImage: booksOn[index]["picture"],
-            bookPrice: booksOn[index]["price"]);
-      },
+    return Container(
+      child: FutureBuilder(
+        future: getposts(),
+        builder: (_, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return Center(
+              child: Text("Loading..."),
+            );
+          } else {
+            return ListView.builder(
+              itemCount: snapshot?.data?.length ?? 0,
+              itemBuilder: (_, index) {
+                return SingleCart(
+                  bookName: snapshot.data[index].data["name"][0].toString(),
+                  bookImage: snapshot.data[index].data["picture"][0].toString(),
+                  bookPrice: snapshot.data[index].data["price"][0].toString(),
+                  );
+              },
+             
+            );
+          }
+        },
+      ),
     );
   }
 }
@@ -49,7 +60,7 @@ class SingleCart extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        leading: new Image.asset(
+        leading: new Image.network(
           bookImage,
           width: 60.0,
           height: 200.0,

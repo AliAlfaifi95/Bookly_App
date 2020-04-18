@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:bookly_app/Pages/book_details.dart';
 
@@ -7,48 +8,69 @@ class Books extends StatefulWidget {
 }
 
 class _BooksState extends State<Books> {
-  var productList = [
-    {
-      "name": "System Analysis and Design",
-      "picture": "images/3.jpg",
-      "price": 100,
-      "details": "A clear presentation, organized around the systems development life cycle model. Essentials of Systems Analysis and Design is a briefer version of the authors’ successful Modern System Analysis and Design, designed for those seeking a streamlined approach to the material. This text also features the systems development life cycle model, which is used to organize the information throughout the chapters.The fifth edition emphasizes current changes in systems analysis and design.",
-      "author": "Joseph Valacich"
-    }
-  ];
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(
-      itemCount: productList.length,
-      gridDelegate:
-          new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-      itemBuilder: (BuildContext context, int index) {
-        return SingleBook(
-          bookName: productList[index]['name'],
-          bookPict: productList[index]['picture'],
-          bookPrice: productList[index]['price'],
-          bookDetails: productList[index]['details'],
-          bookAuthor: productList[index]['author']
-        );
-      },
+    Future getposts() async {
+      var firestore = Firestore.instance;
+      QuerySnapshot gn = await firestore.collection("Books").getDocuments();
+      print(gn.documents);
+      return gn.documents;
+    }
+
+    @override
+    void initState() {
+      super.initState();
+    }
+
+    return Container(
+      child: FutureBuilder(
+        future: getposts(),
+        builder: (_, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return Center(
+              child: Text("Loading..."),
+            );
+          } else {
+            return GridView.builder(
+              itemCount: snapshot?.data?.length ?? 0,
+              itemBuilder: (_, index) {
+                return SingleBook(
+                  bookName: snapshot.data[index].data["name"].toString(),
+                  bookPict: snapshot.data[index].data["picture"][0].toString(),
+                  bookDetails: snapshot.data[index].data["details"].toString(),
+                  bookStates: snapshot.data[index].data["states"].toString(),
+                  bookPrice: snapshot.data[index].data["price"].toString(),
+                );
+              },
+              gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2),
+            );
+          }
+        },
+      ),
     );
   }
 }
 
 class SingleBook extends StatelessWidget {
-  final bookName;
-  final bookPict;
-  final bookPrice;
-  final bookDetails;
-  final bookAuthor;
-  
+  String bookName;
+  String bookPict;
+  String bookPrice;
+  String bookDetails;
+  String bookStates;
 
-  SingleBook({this.bookName, this.bookPict, this.bookPrice,this.bookAuthor,this.bookDetails});
+  SingleBook(
+      {this.bookName,
+      this.bookPict,
+      this.bookPrice,
+      this.bookStates,
+      this.bookDetails});
+
   @override
   Widget build(BuildContext context) {
     return Card(
       child: Hero(
-          tag: bookName,
+          tag: new Text("hero1"),
           child: Material(
             child: InkWell(
               onTap: () => Navigator.of(context).push(new MaterialPageRoute(
@@ -58,7 +80,7 @@ class SingleBook extends StatelessWidget {
                         bookImage: bookPict,
                         bookPrice: bookPrice,
                         bookDetails: bookDetails,
-                        bookAuthor: bookAuthor,
+                        bookAuthor: bookStates,
                       ))),
               child: GridTile(
                 footer: Container(
@@ -81,7 +103,7 @@ class SingleBook extends StatelessWidget {
                         ),
                       ],
                     )),
-                child: Image.asset(
+                child: Image.network(
                   bookPict,
                   fit: BoxFit.fitHeight,
                 ),

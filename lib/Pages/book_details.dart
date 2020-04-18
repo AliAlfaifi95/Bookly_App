@@ -1,4 +1,5 @@
 import 'package:bookly_app/Pages/cart.dart';
+import 'package:bookly_app/components/cartBook.dart';
 import 'package:flutter/material.dart';
 
 class BookDetails extends StatefulWidget {
@@ -72,8 +73,10 @@ class _BookDetailsState extends State<BookDetails> {
               Expanded(
                 child: MaterialButton(
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => new Cart()));
+                    SingleCart(
+                  bookName: widget.bookName,
+                  bookImage: widget.bookImage,
+                  bookPrice: widget.bookPrice);
                   },
                   color: Colors.orangeAccent,
                   textColor: Colors.white,
@@ -128,28 +131,13 @@ class _BookDetailsState extends State<BookDetails> {
               Padding(
                 padding: const EdgeInsets.fromLTRB(12, 5, 5, 7),
                 child: new Text(
-                  "Book Author",
-                  style: TextStyle(color: Colors.grey),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.fromLTRB(12, 5, 5, 7),
-                child: new Text(widget.bookAuthor),
-              ),
-            ],
-          ),
-          new Row(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.fromLTRB(12, 5, 5, 7),
-                child: new Text(
                   "Book Condition",
                   style: TextStyle(color: Colors.grey),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.fromLTRB(12, 5, 5, 7),
-                child: new Text("Like new"),
+                child: new Text(widget.bookAuthor),
               ),
             ],
           ),
