@@ -25,15 +25,15 @@ class _OrdersState extends State<Orders> {
               child: SingleChildScrollView(
                 child: DataTable(
                   columns: [
-                    DataColumn(label: Text('Order no.')),
+                    DataColumn(label: Text('Book Name')),
                     DataColumn(label: Text('Date')),
                     DataColumn(label: Text('Total'))
                   ],
                   rows: [
                     DataRow(cells: [
-                      DataCell(Text('0021')),
-                      DataCell(Text('14/08/2020')),
-                      DataCell(Text('145 SR'),
+                      DataCell(Text('Java')),
+                      DataCell(Text('19/08/2020')),
+                      DataCell(Text('35 SR'),
                       )
                     ])
 
